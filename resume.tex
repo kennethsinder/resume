@@ -1,0 +1,196 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\textbf{Kenneth Sinder}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\textbf{E-mail}: kenneth.sinder@edu.uwaterloo.ca & \textbf{Software
+Engineering}\tabularnewline
+\midrule
+\endhead
+\textbf{GitHub:} kennethsinder & \textbf{Mobile:} (905)
+715-2633\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Technical Summary}
+
+\begin{itemize}
+\item
+  \textbf{Languages}: C\#, Python, PHP, JavaScript, HTML, C++, C, Scala,
+  Java, OCaml, Assembly (MIPS, ARM).
+\item
+  \textbf{Web} \textbf{Technologies}: Laravel, ASP.NET MVC, Django,
+  Angular, jQuery, TypeScript, Jasmine, NVD3.
+\item
+  \textbf{Databases}: MySQL, MS SQL Server, PostgreSQL, OpenTSDB, Apache
+  Cassandra.
+\end{itemize}
+
+\textbf{Experience}
+
+\textbf{Software Developer}, Tangam Systems, Waterloo, ON January 2017
+-- April 2017
+
+\begin{itemize}
+\item
+  Implemented high-value features for casino yield management software
+  under Kanban process.
+\end{itemize}
+
+\begin{itemize}
+\item
+  Developed Team Performance dashboard in C\#, Angular; feature deployed
+  to dozens of casinos.
+\item
+  Created user agent insights tool using ASP.NET MVC to highlight
+  business value opportunities.
+\item
+  Designed custom language for annotating core algorithm code, developed
+  parser in C\#.
+\end{itemize}
+
+\textbf{Software Developer}, CANARIE, Ottawa, ON May 2016 -- August 2016
+
+\begin{itemize}
+\item
+  Architected and developed system for storing, monitoring, and
+  displaying network traffic data.
+\item
+  Constructed web-based network charts and reports using Django
+  (Python), Angular, NVD3.
+\item
+  Wrote and maintained back-end PHP, Python code and configured Linux
+  NoSQL data store.
+\end{itemize}
+
+\textbf{Projects}
+
+\textbf{FinDirection}
+
+\begin{itemize}
+\item
+  Designed and developed wiki-style web resource to teach Canadian
+  personal finance skills.
+\item
+  Implemented lesson contribution with Markdown format, quizzes, and
+  learner progress tracking.
+\item
+  Created using Laravel (PHP MVC framework), MySQL, jQuery, JavaScript
+  (ES6), Sass, HTML.
+\end{itemize}
+
+\textbf{SkypeScan}
+
+\begin{itemize}
+\item
+  Command-line Python 3 search tool for Skype group chats stored in
+  local SQLite database.
+\end{itemize}
+
+\textbf{Various Hackathon Projects}
+
+\begin{itemize}
+\item
+  WatBooks: Textbook listing and ratings site for UW courses (Django,
+  Angular 2, TypeScript).
+\item
+  MyoType: App for efficient accessible text entry using Myo armband
+  (Android Studio/Java).
+\item
+  WEC: Directed Programming component of Fall 2016 Waterloo Engineering
+  Competition.
+\end{itemize}
+
+\begin{itemize}
+\item
+  Designed a real-world software problem and developed a judging tool
+  using Python 3.
+\end{itemize}
+
+\textbf{codeinmotion.net (Personal Website)}
+
+\begin{itemize}
+\item
+  Features recent projects, blog posts, contact form, personal profile;
+  displays local weather.
+\item
+  Created in Laravel (PHP MVC framework); uses jQuery, Bootstrap, HTML5
+  geolocation.
+\end{itemize}
+
+\textbf{Education}
+
+\textbf{Candidate for Bachelor of Software Engineering}, University of
+Waterloo 2015 -- Present
+
+\begin{itemize}
+\item
+  Attained Dean's Honours List every term for maintaining average in top
+  10\% of cohort.
+\item
+  Learned C, C++, Scala, OCaml, and Assembly through regular and
+  enriched courses.
+\end{itemize}
+
+\end{document}
