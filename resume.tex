@@ -2,7 +2,9 @@
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
+\usepackage{ltablex,booktabs}
 \usepackage{fixltx2e} % provides \textsubscript
+\usepackage[letterpaper, portrait, margin=1in]{geometry}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
@@ -26,7 +28,6 @@
 \hypersetup{
             pdfborder={0 0 0},
             breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
 \usepackage{longtable,booktabs}
 % Fix footnotes in tables (requires footnote package)
 \IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
@@ -55,14 +56,18 @@
 \def\fps@figure{htbp}
 \makeatother
 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\renewcommand{\baselinestretch}{0.5}
 
 \date{}
 
 \begin{document}
 
-\textbf{Kenneth Sinder}
+\begin{center}
+\section{Kenneth Sinder}
 
-\begin{longtable}[]{@{}ll@{}}
+\begin{tabularx}{\hsize}{XX}
 \toprule
 \textbf{E-mail}: kenneth.sinder@edu.uwaterloo.ca & \textbf{Software
 Engineering}\tabularnewline
@@ -71,9 +76,11 @@ Engineering}\tabularnewline
 \textbf{GitHub:} kennethsinder & \textbf{Mobile:} (905)
 715-2633\tabularnewline
 \bottomrule
-\end{longtable}
+\end{tabularx}
 
-\textbf{Technical Summary}
+\end{center}
+
+\subsection{Technical Summary}
 
 \begin{itemize}
 \item
@@ -87,7 +94,7 @@ Engineering}\tabularnewline
   Cassandra.
 \end{itemize}
 
-\textbf{Experience}
+\subsection{Experience}
 
 \textbf{Software Developer}, Tangam Systems, Waterloo, ON January 2017
 -- April 2017
@@ -96,9 +103,6 @@ Engineering}\tabularnewline
 \item
   Implemented high-value features for casino yield management software
   under Kanban process.
-\end{itemize}
-
-\begin{itemize}
 \item
   Developed Team Performance dashboard in C\#, Angular; feature deployed
   to dozens of casinos.
@@ -110,7 +114,7 @@ Engineering}\tabularnewline
   parser in C\#.
 \end{itemize}
 
-\textbf{Software Developer}, CANARIE, Ottawa, ON May 2016 -- August 2016
+\subsection{Software Developer}, CANARIE, Ottawa, ON May 2016 -- August 2016
 
 \begin{itemize}
 \item
@@ -124,7 +128,7 @@ Engineering}\tabularnewline
   NoSQL data store.
 \end{itemize}
 
-\textbf{Projects}
+\subsection{Projects}
 
 \textbf{FinDirection}
 
@@ -179,7 +183,7 @@ Engineering}\tabularnewline
   geolocation.
 \end{itemize}
 
-\textbf{Education}
+\subsection{Education}
 
 \textbf{Candidate for Bachelor of Software Engineering}, University of
 Waterloo 2015 -- Present
